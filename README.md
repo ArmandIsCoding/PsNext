@@ -1,6 +1,10 @@
 # PsNext 🚀
 > **Pseudocode Next** | La evolución del pseudocódigo para la próxima generación.
 
+<p align="center">
+  <img src="logo.png" alt="PsNext Logo" width="250">
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![.NET 10](https://img.shields.io/badge/.NET-10.0_LTS-512bd4.svg)
 ![Blazor WASM](https://img.shields.io/badge/UI-Blazor_WASM-512bd4.svg)

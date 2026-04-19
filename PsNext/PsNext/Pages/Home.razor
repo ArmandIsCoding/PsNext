@@ -1,7 +1,43 @@
 ﻿@page "/"
+@implements IAsyncDisposable
+@inject IJSRuntime JSRuntime
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>PsNext Editor</h1>
 
-Welcome to your new app.
+<p>Escribi tu pseudocodigo y ejecutalo para inspeccionar el resultado.</p>
+
+<div id="editor-container" class="editor-container"></div>
+
+<button class="btn btn-primary mt-3" @onclick="EjecutarCodigo">Ejecutar</button>
+
+@if (!string.IsNullOrWhiteSpace(_codigoActual))
+{
+	<pre class="output-console mt-3">@_codigoActual</pre>
+}
+
+@code {
+	private const string InitialCode = "// Escribi tu codigo aca...\nProceso HolaMundo\n    Escribir \"Hola desde PsNext\"\nFinProceso";
+	private string? _codigoActual;
+
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		if (!firstRender)
+		{
+			return;
+		}
+
+		await JSRuntime.InvokeVoidAsync("editorInterop.init", "editor-container", InitialCode);
+	}
+
+	private async Task EjecutarCodigo()
+	{
+		_codigoActual = await JSRuntime.InvokeAsync<string>("editorInterop.getValue");
+	}
+
+	public async ValueTask DisposeAsync()
+	{
+		await JSRuntime.InvokeVoidAsync("editorInterop.dispose");
+	}
+}
