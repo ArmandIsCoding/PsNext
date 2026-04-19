@@ -2,7 +2,7 @@
 > **Pseudocode Next** | La evolución del pseudocódigo para la próxima generación.
 
 <p align="center">
-  <img src="logo.png" alt="PsNext Logo" width="250">
+  <img src="logo-sm.png" alt="PsNext Logo" width="250">
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
