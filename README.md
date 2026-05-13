@@ -1,5 +1,6 @@
-# PsNext 🚀
-> **Pseudocode Next** | La evolución del pseudocódigo para la próxima generación.
+# 🚀 PsNext: PseudoCode Next
+
+> **"Todo sistema tiende a la entropía; documentar es nuestra forma de rebeldía frente al olvido... y programar es nuestra forma de restaurar el orden."**
 
 <p align="center">
   <img src="logo-sm.png" alt="PsNext Logo" width="250">
@@ -9,61 +10,58 @@
 ![.NET 10](https://img.shields.io/badge/.NET-10.0_LTS-512bd4.svg)
 ![Blazor WASM](https://img.shields.io/badge/UI-Blazor_WASM-512bd4.svg)
 
-**PsNext** es un intérprete de pseudocódigo moderno, diseñado desde cero para estudiantes de programación. Inspirado por la simplicidad de PSeInt pero construido con tecnologías de 2026, ofrece una experiencia web fluida, visual y multiplataforma.
+**PsNext** es un intérprete de pseudocódigo moderno, diseñado desde cero para la próxima generación de desarrolladores. Inspirado en el legado de PSeInt, pero reconstruido con la potencia de **.NET 10** y una estética minimalista inspirada en **NeXT**, ofrece una experiencia web fluida, visual y profundamente técnica.
 
 ---
 
-## ✨ ¿Por qué PsNext?
+### 🧠 Filosofía de Ingeniería
+Como desarrollador con 18 años en el ecosistema Microsoft, creo que las herramientas de enseñanza deben ser tan robustas como los sistemas de producción. PsNext no es solo un juguete educativo; es un ejercicio de **alta performance**:
 
-PSeInt cumplió una misión histórica, pero las nuevas generaciones necesitan herramientas que se sientan como el software que usan a diario. **PsNext** nace para llenar ese vacío:
+*   **Zero-Allocation Lexer:** Utilizo `ReadOnlySpan<char>` para minimizar las asignaciones de memoria durante la tokenización, llevando técnicas de optimización de nivel senior al mundo educativo.
+*   **AST de Descenso Recursivo:** Un parser sólido que genera un árbol sintáctico ejecutable, permitiendo una visualización del estado de variables en tiempo real.
+*   **Web-First & Offline:** Implementado con **Blazor WebAssembly**, funciona sin instaladores pero con la potencia de un binario nativo.
 
--   **Web-First:** Sin instaladores. Funciona en el navegador, iPad, tablets y modo DeX.
--   **Editor Profesional:** Basado en **Monaco Editor** (el motor de VS Code).
--   **Visualización en Vivo:** Observá cómo cambian tus variables en tiempo real mientras el código se ejecuta.
--   **Performance Senior:** Motor de interpretación construido en **.NET 10 (LTS)** con un Lexer de alto rendimiento.
--   **Estética NeXT:** Un diseño minimalista y oscuro inspirado en el legado de Steve Jobs.
+---
 
-## 🛠 Arquitectura Técnica
+### ✨ ¿Por qué PsNext?
+Las herramientas actuales han cumplido su ciclo. PsNext nace para llenar el vacío entre la lógica inicial y el desarrollo profesional:
 
-PsNext no es solo una cara bonita; por debajo corre una arquitectura pensada por y para desarrolladores Senior:
+*   **Editor de Clase Mundial:** Basado en el motor de **VS Code (Monaco Editor)**.
+*   **Performance Senior:** Motor construido sobre **.NET 10 (LTS)**.
+*   **Estética NeXT:** Un tributo a la ingeniería de Steve Jobs: funcional, oscura y elegante.
 
--   **Frontend:** Blazor WebAssembly (Standalone).
--   **Motor Core:** Lexer basado en `ReadOnlySpan<char>` para reducir asignaciones de memoria.
--   **Interpretación:** Parser de descenso recursivo que genera un AST (Abstract Syntax Tree) ejecutable.
--   **Offline Ready:** Funcionamiento offline garantizado mediante capacidades de PWA.
+---
 
-## 🚀 Instalación y Desarrollo (Local)
+### 🚀 Roadmap de Evolución
+*   [ ] **Fase 1:** Integración de Monaco Editor y resaltado de sintaxis.
+*   [ ] **Fase 2:** Lexer y Parser base (variables, condicionales, bucles).
+*   [ ] **Fase 3:** Debugger paso a paso con inspección de memoria.
+*   [ ] **Fase 4:** Transpiler a código real (C#, Python, JavaScript).
 
-Si querés colaborar o probar PsNext en tu máquina:
+---
 
-1. **Requisitos:**
-   - [.NET 10 SDK](https://dotnet.microsoft.com/download)
-   - JetBrains Rider (Recomendado) o VS Code.
+### 🛠️ Desarrollo Local
+```bash
+git clone [https://github.com/ArmandIsCoding/PsNext.git](https://github.com/ArmandIsCoding/PsNext.git)
+cd PsNext
+dotnet watch run --project PsNext
 
-2. **Clonar y Correr:**
-   ```bash
-   git clone [https://github.com/tu-usuario/PsNext.git](https://github.com/tu-usuario/PsNext.git)
-   cd PsNext
-   dotnet watch run --project PsNext
-   ```
+```
 
-3. **Abrir:** Navegá a `https://localhost:7047`
+---
 
-## 🗺 Hoja de Ruta (Roadmap)
+### 📝 Bitácora del Arquitecto (Blog Insight)
 
-- [ ] **Fase 1:** Integración de Monaco Editor y resaltado de sintaxis.
-- [ ] **Fase 2:** Implementación del Lexer y Parser base (variables, condicionales, bucles).
-- [ ] **Fase 3:** Consola de salida interactiva y depurador paso a paso.
-- [ ] **Fase 4:** Exportación de pseudocódigo a código real (C#, Python, JavaScript).
+Este proyecto representa mi intersección favorita: **Software e Inteligencia Artificial**. En el futuro, PsNext integrará asistencia de modelos locales (como los que exploro en **NoPilot**) para ayudar a los estudiantes a entender no solo *qué* escriben, sino *por qué* funciona. Podés seguir el progreso de esta visión en mi blog central.
 
-## 🤝 Contribuir
+🌐 **[helloworld.com.ar](https://helloworld.com.ar)**
 
-¡Las pull requests son bienvenidas! Como proyecto de código abierto, PsNext busca ser una herramienta comunitaria. Si sos de Santa Fe y querés invitar un liso para discutir el código, ¡mucho mejor! 🍻
+---
 
-## 📄 Licencia
+### 🤝 Contribuir
 
-Este proyecto está bajo la **Licencia MIT**. Esto significa que podés usarlo, modificarlo y distribuirlo libremente.
+Las pull requests son bienvenidas. Si sos de **Santa Fe** y querés discutir sobre gramáticas formales o arquitectura de software, el primer liso corre por mi cuenta! 🍻
 
-Hecho con ❤️ en **Santa Fe, Argentina**.
+---
 
-*“Stay hungry, stay foolish.”*
+*Hecho con ❤️ en Santa Fe, Argentina. "Stay hungry, stay foolish."*
